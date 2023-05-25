@@ -1,22 +1,23 @@
 <template>
-  
+  <v-app>
+    <v-main>
+      <HelloWorld/>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import NotesSidebar from './components/NotesSidebar.vue'
-import NotesContainer from './components/NotesContainer.vue'
-import SingleNoteItem from './components/SingleNoteItem.vue'
+import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
+
   components: {
-    NotesSidebar,
-    NotesContainer,
-    SingleNoteItem
-  }
+    HelloWorld,
+  },
+
+  data: () => ({
+    //
+  }),
 }
 </script>
-
-<style>
-
-</style>
